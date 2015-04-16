@@ -1,0 +1,253 @@
+{
+"url": "www.animaux.com",
+"conversion_rate": 78.19,
+"bounce rate": 5.13,
+"path": [
+  {
+    "url": "/mammifères",
+    "conversion_rate": 65.43,
+    "bounce_rate": 2.30,
+    "path": [
+      {
+        "url": "/chat",
+        "conversion_rate": 90.12,
+        "bounce_rate": 1.29,
+        "path": [
+          {
+            "url": "/siamois",
+            "conversion_rate": 43.65,
+            "bounce_rate": 0.25
+          }, {
+            "url": "/persan",
+            "conversion_rate": 78.23,
+            "bounce_rate": 0.54
+          }, {
+            "url": "/européen",
+            "conversion_rate": 45.56,
+            "bounce_rate": 0.76
+          }, {
+            "url": "/egyptien",
+            "conversion_rate": 23.98,
+            "bounce_rate": 0.22
+          }
+        ]
+      }, {
+        "url": "/chien",
+        "conversion_rate": 78,
+        "bounce_rate": 2.6,
+        "path": [
+          {
+            "url": "/bulldog",
+            "conversion_rate": 28.28,
+            "bounce_rate": 0.78
+          }, {
+            "url": "/berger_allemand",
+            "conversion_rate": 10.76,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/chihuahua",
+            "conversion_rate": 78.45,
+            "bounce_rate": 1.97
+          }, {
+            "url": "/labrador",
+            "conversion_rate": 45.09,
+            "bounce_rate": 1.43
+          }, {
+            "url": "/rotweiler",
+            "conversion_rate": 13.29,
+            "bounce_rate": 1.43
+          }
+        ]
+      }, {
+        "url": "/cheval",
+        "conversion_rate": 12.89,
+        "bounce_rate": 0.98,
+        "path": [
+          {
+            "url": "/kabardin",
+            "conversion_rate": 34.43,
+            "bounce_rate": 0.11
+          }, {
+            "url": "/islandais",
+            "conversion_rate": 45.19,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/yamud",
+            "conversion_rate": 43.12,
+            "bounce_rate": 0.86
+          }, {
+            "url": "/holstein",
+            "conversion_rate": 86.23,
+            "bounce_rate": 1.01
+          }, {
+            "url": "/gidran",
+            "conversion_rate": 76.41,
+            "bounce_rate": 0.67
+          }
+        ]
+      }
+    ]
+  }, {
+    "url": "/oiseaux",
+    "conversion_rate": 22.89,
+    "bounce_rate": 0.46,
+    "path": [
+      {
+        "url": "/aigle",
+        "conversion_rate": 90.12,
+        "bounce_rate": 1.29,
+        "path": [
+          {
+            "url": "/aigleA",
+            "conversion_rate": 43.65,
+            "bounce_rate": 0.25
+          }, {
+            "url": "/aigleB",
+            "conversion_rate": 78.23,
+            "bounce_rate": 0.54
+          }, {
+            "url": "/aigleC",
+            "conversion_rate": 45.56,
+            "bounce_rate": 0.76
+          }, {
+            "url": "/aigleD",
+            "conversion_rate": 23.98,
+            "bounce_rate": 0.22
+          }
+        ]
+      }, {
+        "url": "/poule",
+        "conversion_rate": 20.11,
+        "bounce_rate": 0.55,
+        "path": [
+          {
+            "url": "/pouleA",
+            "conversion_rate": 28.28,
+            "bounce_rate": 0.78
+          }, {
+            "url": "/pouleB",
+            "conversion_rate": 10.76,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/pouleC",
+            "conversion_rate": 78.45,
+            "bounce_rate": 1.97
+          }, {
+            "url": "/pouleD",
+            "conversion_rate": 45.09,
+            "bounce_rate": 1.43
+          }, {
+            "url": "/pouleE",
+            "conversion_rate": 13.29,
+            "bounce_rate": 1.43
+          }
+        ]
+      }, {
+        "url": "/canard",
+        "conversion_rate": 78.78,
+        "bounce_rate": 0.98,
+        "path": [
+          {
+            "url": "/canardA",
+            "conversion_rate": 34.43,
+            "bounce_rate": 0.11
+          }, {
+            "url": "/canardB",
+            "conversion_rate": 45.19,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/canardC",
+            "conversion_rate": 43.12,
+            "bounce_rate": 0.86
+          }, {
+            "url": "/canardD",
+            "conversion_rate": 86.23,
+            "bounce_rate": 1.01
+          }
+        ]
+      }
+    ]
+  }, {
+    "url": "/poissons",
+    "conversion_rate": 18.34,
+    "bounce_rate": 0.62,
+    "path": [
+      {
+        "url": "/requin",
+        "conversion_rate": 12.31,
+        "bounce_rate": 1.29,
+        "path": [
+          {
+            "url": "/requinA",
+            "conversion_rate": 43.65,
+            "bounce_rate": 0.25
+          }, {
+            "url": "/requinB",
+            "conversion_rate": 78.23,
+            "bounce_rate": 0.54
+          }, {
+            "url": "/requinC",
+            "conversion_rate": 45.56,
+            "bounce_rate": 0.76
+          }, {
+            "url": "/requinD",
+            "conversion_rate": 23.98,
+            "bounce_rate": 0.22
+          }
+        ]
+      }, {
+        "url": "/raie",
+        "conversion_rate": 80.11,
+        "bounce_rate": 0.91,
+        "path": [
+          {
+            "url": "/raieA",
+            "conversion_rate": 28.28,
+            "bounce_rate": 0.78
+          }, {
+            "url": "/raieB",
+            "conversion_rate": 10.76,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/raieC",
+            "conversion_rate": 78.45,
+            "bounce_rate": 1.97
+          }, {
+            "url": "/raieD",
+            "conversion_rate": 45.09,
+            "bounce_rate": 1.4
+          }, {
+            "url": "/raieE",
+            "conversion_rate": 13.29,
+            "bounce_rate": 1.43
+          }
+        ]
+      }, {
+        "url": "/espadon",
+        "conversion_rate": 11.11,
+        "bounce_rate": 0.18,
+        "path": [
+          {
+            "url": "/espadonA",
+            "conversion_rate": 34.43,
+            "bounce_rate": 0.11
+          }, {
+            "url": "/espadonB",
+            "conversion_rate": 45.19,
+            "bounce_rate": 0.16
+          }, {
+            "url": "/espadonC",
+            "conversion_rate": 43.12,
+            "bounce_rate": 0.86
+          }, {
+            "url": "/espadonD",
+            "conversion_rate": 86.23,
+            "bounce_rate": 1.01
+          }
+        ]
+      }
+    ]
+  }
+]
+}
+
