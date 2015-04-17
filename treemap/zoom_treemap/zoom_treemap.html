@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+    overflow: hidden;
+    margin: 0;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+.footer {
+    z-index: 1;
+    display: block;
+    font-size: 26px;
+    font-weight: 200;
+    text-shadow: 0 1px 0 #fff;
+}
+
+svg {
+    overflow: hidden;
+}
+
+rect {
+    pointer-events: all;
+    cursor: pointer;
+    stroke: #EEEEEE;
+}
+
+.chart {
+    display: block;
+    margin: auto;
+}
+
+.label {
+    stroke: #000000;
+    fill: #000000;
+    stroke-width: 0;
+    margin: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.parent .label {
+    font-size: 12px;
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.child .label {
+    font-size: 11px;
+}
+
+.cell {
+    font-size: 11px;
+    cursor: pointer
+}
+
+
+</style>
+<head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="flare.js"></script>
+    <script src="function.js"></script>
+    <script src="zoom_treemap.js"></script>
+</head>
+<body>
+<div id="body"></div>
+<div class="footer">
+    <select>
+        <option value="size">Size</option>
+        <option value="count">Count</option>
+    </select>
+</div>
+</body>
