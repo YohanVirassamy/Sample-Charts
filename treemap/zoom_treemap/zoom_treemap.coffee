@@ -23,8 +23,8 @@ $(document).ready ->
         .attr("height", height)
         .append("svg:g")
 
-    node = root = data
-    nodes = treemap.nodes(data)
+    window.node = window.root = data
+    nodes = treemap.nodes(root)
 
     children = nodes.filter((d) -> !d.children)
     parents = nodes.filter((d) -> d.children)
@@ -36,7 +36,9 @@ $(document).ready ->
     parentEnterTransition = parentCells.enter()
         .append("g")
         .attr("class", "cell parent")
-        .on("click", (d) -> zoom(d))
+        .on("click", (d) -> 
+            zoom(d)
+            return)
         .append("svg")
         .attr("class", "clip")
         .attr("width", (d) -> Math.max(0.01, d.dx))
@@ -83,13 +85,16 @@ $(document).ready ->
     childEnterTransition = childrenCells.enter()
         .append("g")
             .attr("class", "cell child")
-            .on("click", (d) -> zoom(if node == d.parent then root else d.parent))
+            .on("click", (d) ->
+                zoom(if node == d.parent then root else d.parent)
+                return)
             .append("svg")
             .attr("class", "clip")
 
     childEnterTransition.append("rect")
         .classed("background", true)
-        .style("fill" , (d) -> color(d.parent.name))
+        .style("fill" , (d) ->
+                color(d.parent.name))
 
     childEnterTransition.append("text")
         .attr("class", "label")
@@ -105,10 +110,11 @@ $(document).ready ->
     childUpdateTransition.select(".cell")
         .attr("transform", (d) -> "translate(" + d.x + "," + d.y + ")")
 
-    parentUpdateTransition.select("rect")
+    childUpdateTransition.select("rect")
         .attr("width", (d) -> Math.max(0.01, d.dx))
         .attr("height", (d) -> d.dy)
-        .style("fill", (d) -> color(d.parent.name))
+        .style("fill", (d) ->
+                color(d.parent.name))
 
     childUpdateTransition.select(".label")
         .attr("x", (d) -> d.dx / 2)
@@ -125,7 +131,8 @@ $(document).ready ->
         console.log("select zoom(node)")
         treemap.value(if this.value == "size" then size else count )
             .nodes(root)
-        zoom(node))
+        zoom(node)
+        return)
 
     zoom(node)
     return

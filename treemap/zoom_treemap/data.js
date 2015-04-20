@@ -1,14 +1,14 @@
 zoom_treemap = {
-"name": "zoom_treemap",
-"parent": "null",
-"children": [
-{
-"name": "/mammiferes",
-"parent": "zoom_treemap",
-"children": [
-{
-"name": "/chat",
-"parent": "/mammiferes",
+    "name": "animaux.com",
+    //"parent": "null",
+    "children": [
+        {
+            "name": "/mammiferes",
+            //"parent": "zoom_treemap",
+            "children": [
+                {
+                    "name": "/chat",
+                        //"parent": "/mammiferes",
 "children": [
 {"name": "/siamois", "conversion_rate": 43.65, "size": 0.25},
 {"name": "/persan", "conversion_rate": 78.23, "size": 0.54},
@@ -18,7 +18,7 @@ zoom_treemap = {
 },
 {
 "name": "/chien",
-"parent": "/mammiferes",
+//"parent": "/mammiferes",
 "children": [
 {"name": "/bulldog", "conversion_rate": 28.28, "size": 0.78},
 {"name": "/berger_allemand", "conversion_rate": 10.76, "size": 0.16},
@@ -29,7 +29,7 @@ zoom_treemap = {
 },
 {
 "name": "/cheval",
-"parent": "/mammiferes",
+//"parent": "/mammiferes",
 "children": [
 {"name": "/kabardin", "conversion_rate": 34.43, "size": 0.11},
 {"name": "/islandais", "conversion_rate": 45.19, "size": 0.16},
@@ -42,11 +42,11 @@ zoom_treemap = {
 },
 {
 "name": "/oiseaux",
-"parent": "zoom_treemap",
+//"parent": "zoom_treemap",
 "children": [
 {
 "name": "/aigle",
-"parent": "/oiseaux",
+//"parent": "/oiseaux",
 "children": [
 {"name": "/aigleA", "conversion_rate": 43.65, "size": 0.25},
 {"name": "/aigleB", "conversion_rate": 78.23, "size": 0.54},
@@ -56,7 +56,7 @@ zoom_treemap = {
 },
 {
 "name": "/poule",
-"parent": "/oiseaux",
+//"parent": "/oiseaux",
 "children": [
 {"name": "/pouleA", "conversion_rate": 28.28, "size": 0.78},
 {"name": "/pouleB", "conversion_rate": 10.76, "size": 0.16},
@@ -67,7 +67,7 @@ zoom_treemap = {
 },
 {
 "name": "/canard",
-"parent": "/oiseaux",
+//"parent": "/oiseaux",
 "children": [
 {"name": "/canardA", "conversion_rate": 34.43, "size": 0.11},
 {"name": "/canardB", "conversion_rate": 45.19,"size": 0.16},
@@ -79,11 +79,11 @@ zoom_treemap = {
 },
 {
 "name": "/poissons",
-"parent": "zoom_treemap",
+//"parent": "zoom_treemap",
 "children": [
 {
 "name": "/requin",
-"parent": "/poissons",
+//"parent": "/poissons",
 "children": [
 {"name": "/requinA", "conversion_rate": 43.65, "size": 0.25},
 {"name": "/requinB", "conversion_rate": 78.23, "size": 0.54},
@@ -93,7 +93,7 @@ zoom_treemap = {
 },
 {
 "name": "/raie",
-"parent": "/poissons",
+//"parent": "/poissons",
 "children": [
 {"name": "/raieA", "conversion_rate": 28.28, "size": 0.78},
 {"name": "/raieB", "conversion_rate": 10.76, "size": 0.16},
@@ -104,7 +104,7 @@ zoom_treemap = {
 },
 {
 "name": "/espadon",
-"parent": "/poissons",
+//"parent": "/poissons",
 "children": [
 {"name": "/espadonA", "conversion_rate": 34.43, "size": 0.11},
 {"name": "/espadonB", "conversion_rate": 45.19,"size": 0.16},

@@ -27,6 +27,7 @@ $(document).ready ->
         if 255 - bgDelta < nThreshold then '#000000' else '#ffffff'
 
     window.zoom = (d) ->
+        console.log(d)
         this.treemap
             .padding([headerHeight / (height / d.dy), 0, 0, 0 ])
             .nodes(d)
@@ -36,7 +37,7 @@ $(document).ready ->
         ky = height / d.dy
         level = d
 
-        xscale.domain [d.x, d.x + d.dy]
+        xscale.domain [d.x, d.x + d.dx]
         yscale.domain [d.y, d.y + d.dy]
 
         if (node != level)
@@ -47,14 +48,17 @@ $(document).ready ->
             .attr("transform", (d) -> "translate(" + xscale(d.x) + "," + yscale(d.y) + ")")
             .each("start", ->
                 d3.select(this).select("label")
-                    .style("display", "none"))
+                    .style("display", "none")
+                return)
             .each("end", (d, i) ->
-                if (!i && (level != self.root))
+                if (!i and (level isnt root))
                     chart.selectAll(".cell.child")
-                        .filter((d) -> d.parent == self.node)
+                        .attr("id", "hoho")
+                        .filter((d) -> d.parent is node)
                         .select(".label")
                         .style("display", "")
-                        .style("fill", (d) -> idealTextColor(color(d.parent.name))))
+                        .style("fill", (d) -> idealTextColor(color(d.parent.name)))
+                return)
 
         zoomTransition.select(".clip")
             .attr("width", (d) -> Math.max(0.01, (kx * d.dx)))
@@ -74,10 +78,12 @@ $(document).ready ->
             .attr("height", (d) -> if d.children then headerHeight else  Math.max(0.01, (ky * d.dy)))
             .style("fill", (d) -> if d.children then headerColor else color(d.parent.name))
 
-        node = d
+        window.node = d
 
         if (d3.event)
             d3.event.stopPropagation()
+
+        return
 
     return
 

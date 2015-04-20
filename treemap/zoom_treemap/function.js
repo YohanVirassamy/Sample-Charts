@@ -36,12 +36,13 @@
       }
     };
     window.zoom = function(d) {
-      var kx, ky, level, node, zoomTransition;
+      var kx, ky, level, zoomTransition;
+      console.log(d);
       this.treemap.padding([headerHeight / (height / d.dy), 0, 0, 0]).nodes(d);
       kx = width / d.dx;
       ky = height / d.dy;
       level = d;
-      xscale.domain([d.x, d.x + d.dy]);
+      xscale.domain([d.x, d.x + d.dx]);
       yscale.domain([d.y, d.y + d.dy]);
       if (node !== level) {
         chart.selectAll(".cell.child .label").style("display", "none");
@@ -49,11 +50,11 @@
       zoomTransition = chart.selectAll("g.cell").transition().duration(transitionDuration).attr("transform", function(d) {
         return "translate(" + xscale(d.x) + "," + yscale(d.y) + ")";
       }).each("start", function() {
-        return d3.select(this).select("label").style("display", "none");
+        d3.select(this).select("label").style("display", "none");
       }).each("end", function(d, i) {
-        if (!i && (level !== self.root)) {
-          return chart.selectAll(".cell.child").filter(function(d) {
-            return d.parent === self.node;
+        if (!i && (level !== root)) {
+          chart.selectAll(".cell.child").attr("id", "hoho").filter(function(d) {
+            return d.parent === node;
           }).select(".label").style("display", "").style("fill", function(d) {
             return idealTextColor(color(d.parent.name));
           });
@@ -99,9 +100,9 @@
           return color(d.parent.name);
         }
       });
-      node = d;
+      window.node = d;
       if (d3.event) {
-        return d3.event.stopPropagation();
+        d3.event.stopPropagation();
       }
     };
   });
