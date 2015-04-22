@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="utf-8">
+        <title>Sequences Sunburst</title>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="sequences_sunburst.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="sequence"></div>
+            <div id="chart">
+                <div id="explanation" style="visibility: hidden;">
+                <span id="percentage"></span><br/>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <input type="checkbox" id="togglelegend"> Legend<br/>
+            <div id="legend" style="visibility:hidden;"></div>
+        </div>
+        <script src="flare.js"></script>
+        <script src="color.js"></script>
+        <script src="sequences_sunburst.js"></script>
+        <script type="text/javascript">
+            d3.select(self.frameElement).style("height", "700px");
+        </script>
+    </body>
+</html>
