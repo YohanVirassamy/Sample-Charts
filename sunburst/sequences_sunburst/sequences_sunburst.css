@@ -28,7 +28,7 @@ body {
     padding: 10px 0 0 3px;
 }
 
-#sequence text, #legend text {
+#sequence text, #legend text{
     font-weight: 600;
     fill: #fff;
 }
@@ -53,4 +53,8 @@ body {
 
 #percentage {
     font-size: 2.5em;
+}
+
+#children_name {
+    font-size: 2em;
 }
