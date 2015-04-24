@@ -34,6 +34,22 @@
           }
         ]
       }
+    },
+    "query_sessions_per_day": {
+      "data": {
+        "slide": {
+          "date_from": "10/04/2015",
+          "date_to": "17/04/2015"
+        },
+        "standard_dimension": "ga:source",
+        "metrics": [
+          {
+            "name": "Visites",
+            "metric": "sessions",
+            "ga_id": "ga:71237506"
+          }
+        ]
+      }
     }
   };
 
