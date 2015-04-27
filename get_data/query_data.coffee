@@ -39,7 +39,7 @@ window.queries = {
                 "date_from": "10/04/2015"
                 "date_to": "17/04/2015"
             },
-            "standard_dimension": "ga:source"
+            "standard_dimension": "ga:date"
             "metrics": [
                 {
                     "name": "Visites"

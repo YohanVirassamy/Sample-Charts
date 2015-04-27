@@ -8,7 +8,7 @@
       'url': url,
       'method': 'POST',
       'data': {
-        'query': JSON.stringify(query.query_browser)
+        'query': JSON.stringify(query.query_sessions_per_day)
       }
     }).done(function(data) {
       console.log(JSON.stringify(data, void 0, 4));
