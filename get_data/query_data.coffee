@@ -36,7 +36,8 @@ window.queries = {
     "query_sessions_per_day": {
         "data": {
             "slide": {
-                "date_from": "10/04/2015"
+                "limit": 10000
+                "date_from": "01/01/2013"
                 "date_to": "17/04/2015"
             },
             "standard_dimension": "ga:date"
@@ -49,4 +50,22 @@ window.queries = {
             ]
         }
     }
+    "query_sessions_per_month_browser": {
+        "data": {
+            "slide": {
+                "limit": 10000
+                "date_from": "01/01/2013"
+                "date_to": "31/12/2014"
+            },
+            "standard_dimension": "ga:yearMonth"
+            "metrics": [
+                {
+                    "name": "Visites"
+                    "metric": "sessions"
+                    "ga_id": "ga:71237506"
+                }
+            ]
+        }
+    }
+
 }

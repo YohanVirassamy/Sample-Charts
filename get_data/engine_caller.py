@@ -22,18 +22,15 @@ def get_token():
     return tok
 
 
-token = get_token()
-
-
 def send_query(query):
     ''' Send the query to Google and return response object '''
 
     headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 
-    query['access_token'] = token
+    query['access_token'] = get_token()
 
     try:
-        resp = requests.post('http://july:1082/query', data=json.dumps(query), headers=headers)
+        resp = requests.post('http://juliet:1082/query', data=json.dumps(query), headers=headers)
     except Exception as e:
         print(e.message)
 
@@ -57,4 +54,4 @@ def get_engine_data():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

@@ -9,7 +9,7 @@ $(document).ready ->
     $.ajax(
       'url': url
       'method': 'POST'
-      'data': {'query': JSON.stringify(query.query_sessions_per_day)}
+      'data': {'query': JSON.stringify(query.query_sessions_per_month_browser)}
     ).done (data) ->
 
         console.log(JSON.stringify(data, undefined, 4))
