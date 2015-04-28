@@ -55,7 +55,7 @@
     "query_sessions_per_month_browser": {
       "data": {
         "slide": {
-          "limit": 10000,
+          "limit": 9999,
           "date_from": "01/01/2013",
           "date_to": "31/12/2014"
         },

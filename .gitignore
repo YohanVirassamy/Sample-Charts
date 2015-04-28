@@ -1,2 +1,4 @@
 virtualenv
 get_data
+.DS_Store
+*.coffee
