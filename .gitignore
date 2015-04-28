@@ -1,2 +1,2 @@
-virtualenv/*
-get_data/*
+virtualenv/
+get_data/
