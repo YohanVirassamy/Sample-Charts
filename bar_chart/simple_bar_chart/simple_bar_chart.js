@@ -12,9 +12,8 @@
       }
     }).done(function(data) {
       var area, bar, bottom, get_data_value, height, height_info, info, left, right, svg, text_browser, text_value, top, width, width_info, x, xAxis, y, yAxis;
-      console.log(JSON.stringify(data));
       data = format_query_browser(data);
-      console.log(data.browser);
+      console.log(JSON.stringify(data, null, 4));
       console.log(d3.max(data.browser, function(d) {
         return d.value;
       }));
